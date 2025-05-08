@@ -1,12 +1,12 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image_1 from "/public/images/image-s1.png";
-import image_2 from "/public/images/image-s2.png";
-import image_3 from "/public/images/image-s3.png";
+import image_1 from "/images/image-s1.png";
+import image_2 from "/images/image-s2.png";
+import image_3 from "/images/image-s3.png";
 import React from "react";
 import Slider from "react-slick";
 
-const CenterMode = () => {
+const CenterModeSlide = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -57,4 +57,4 @@ const CenterMode = () => {
   );
 };
 
-export default CenterMode;
+export default CenterModeSlide;

@@ -1,16 +1,16 @@
 import React from "react";
-import maskGroup from "/public/images/mask_group.png";
-import fixMyPhone from "/public/images/Frame 1143.png";
-import verdant from "/public/images/Frame 1139.png";
-import duet from "/public/images/Frame 1141.png";
-import apex from "/public/images/Frame 1150.png";
-import lindholms from "/public/images/Frame 1147.png";
+import maskGroup from "/images/mask_group.png";
+import fixMyPhone from "/images/Frame 1143.png";
+import verdant from "/images/Frame 1139.png";
+import duet from "/images/Frame 1141.png";
+import apex from "/images/Frame 1150.png";
+import lindholms from "/images/Frame 1147.png";
 import Navbar from "./Navbar";
 
 const Banner = () => {
   return (
     <section
-      className="relative max-h-[734px] bg-cover banner  text-white flex flex-col justify-center items-center px-4 pb-10"
+      className="relative max-h-[734px] bg-cover bg-blend-exclusion bg-[#00000d] text-white flex flex-col justify-center items-center px-4 pb-10"
       style={{
         backgroundImage: `url(${maskGroup})`,
       }}
@@ -21,7 +21,7 @@ const Banner = () => {
       {/* ************** Content ************* */}
 
       <div className=" z-10 text-center max-w-3xl flex flex-col font-[Rethink_Sans]">
-        <div className="mt-40 mt">
+        <div className="mt-40 ">
           <h1 className="text-3xl lg:text-[64px] md:text-5xl font-bold leading-tight ">
             <span className="text-gray-300">We Shape Your Ideas Into</span>
             <br />

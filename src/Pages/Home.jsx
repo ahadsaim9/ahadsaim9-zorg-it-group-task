@@ -1,48 +1,66 @@
 import React from "react";
-import { recentWorks } from "../data/mockData";
-import CenterMode from "../components/CenterMode";
 import Banner from "../components/Banner";
-import Card from "../components/Card";
-import bg_img2 from "/public/images/bg_2.png";
-import bg_img3 from "/public/images/Bg.png";
+
+import bg_img2 from "/images/bg_2.png";
+import bg_img3 from "/images/Bg.png";
 import Service from "../components/Service";
+import CenterModeSlide from "../components/CenterMoodSlide";
+import InsightsSection from "../components/InsightsSection";
+import Footer from "../components/Footer";
+import RecentWorks from "../components/RecentWorks";
 
 const Home = () => {
+  const recentWorksStyle =
+    "h-[220px] w-2/4 bg-cover bg-center  bg-blend-exclusion bg-[#00000d] text-white flex flex-col justify-center items-center px-4 pb-10";
   return (
     <div className="max-w-[1440px] mx-auto ">
       <div className="mx-auto w-full">
         <Banner />
       </div>
-      <div className="centerMode ">
-        <CenterMode />
+      <div className="bg-blend-exclusion bg-[#00000d]">
+        <CenterModeSlide />
         <section
-          className="h-[670px] w-full bg-cover  banner text-white flex flex-col justify-center items-center px-4 pb-10"
+          className=" h-auto  lg:h-[670px] w-full bg-cover  bg-blend-exclusion bg-[#00000d] "
           style={{
             backgroundImage: `url(${bg_img2})`,
           }}
         >
           <Service />
         </section>
-      </div>
-      <div
-        className="h-auto w-full bg-cover   banner text-white flex flex-col justify-center items-center px-4 pb-10"
-        style={{
-          backgroundImage: `url(${bg_img3})`,
-        }}
-      >
-        <div className="grid max-w-[1140px] mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6">
-          {recentWorks.map((work, index) => (
-            <div
-              key={index}
-              className={`${
-                index === 0 || index === 1 ? "lg:col-span-6" : "lg:col-span-4 "
-              } col-span-1`}
-            >
-              <Card work={work} />
-            </div>
-          ))}
+
+        {/* ********** Our Most Recent Works *********** */}
+        <div className="h-auto w-full   bg-[#00000d] text-white flex flex-col justify-center items-center px-4 pb-10">
+          <div
+            className={`${recentWorksStyle}`}
+            style={{
+              backgroundImage: `url(${bg_img3})`,
+            }}
+          >
+            <h2 className="text-3xl">Our Most Recent Works</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Eget at at nunc lorem.
+            </p>
+          </div>
         </div>
+        {/* *********** RecentWorks ************* */}
+        <RecentWorks />
       </div>
+
+      {/* ************ Featured Insights ************ */}
+      <div className="h-auto w-full  bg-[#00000d] text-white flex flex-col justify-center items-center px-4 pb-10">
+        <div
+          className="h-[220px] w-2/4 bg-cover bg-center  bg-blend-exclusion bg-[#00000d] text-white flex flex-col justify-center items-center px-4 pb-10"
+          style={{
+            backgroundImage: `url(${bg_img3})`,
+          }}
+        >
+          <h2 className="text-3xl">Featured Insights</h2>
+          <p>Lorem ipsum dolor sit amet consectetur. Eget at at nunc lorem.</p>
+        </div>
+        {/* ************ InsightsSection ************ */}
+        <InsightsSection />
+      </div>
+      <Footer />
     </div>
   );
 };
