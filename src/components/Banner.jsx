@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 const Banner = () => {
   return (
     <section
-      className="relative max-h-[734px] bg-cover bg-blend-exclusion bg-[#00000d] text-white flex flex-col justify-center items-center px-4 pb-10"
+      className="relative max-h-[734px] bg-cover bg-blend-exclusion bg-[#0a0a0a] text-white flex flex-col justify-center items-center px-4 pb-10"
       style={{
         backgroundImage: `url(${maskGroup})`,
       }}
@@ -21,7 +21,7 @@ const Banner = () => {
       {/* ************** Content ************* */}
 
       <div className=" z-10 text-center max-w-3xl flex flex-col font-[Rethink_Sans]">
-        <div className="mt-40 ">
+        <div className="mt-46 ">
           <h1 className="text-3xl lg:text-[64px] md:text-5xl font-bold leading-tight ">
             <span className="text-gray-300">We Shape Your Ideas Into</span>
             <br />
@@ -29,10 +29,10 @@ const Banner = () => {
             <br />
             <span className="text-white">Experience</span>
           </h1>
-          <p className="mt-4  text-sm md:text-base">
+          <p className="mt-6  text-sm md:text-base">
             Lorem ipsum dolor sit amet consectetur. Eget at at nunc lorem.
           </p>
-          <button className="mt-6 bg-gradient-to-r from-[#73BFFA] to-[#3C97F5] hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-full transition duration-300">
+          <button className="mt-10 bg-gradient-to-r from-[#73BFFA] to-[#3C97F5] hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-full transition duration-300">
             Book a call with us
           </button>
         </div>

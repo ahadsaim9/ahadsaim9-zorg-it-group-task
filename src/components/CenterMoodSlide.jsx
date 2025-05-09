@@ -16,6 +16,7 @@ const CenterModeSlide = () => {
     slidesToScroll: 1,
     pauseOnHover: true,
     speed: 500,
+    arrows: false,
     responsive: [
       /* *************** Tablet Device *************** */
 
@@ -39,11 +40,12 @@ const CenterModeSlide = () => {
   const images = [image_1, image_2, image_3, image_1, image_2];
 
   return (
-    <div className="slider-container max-w-[1440px] mx-auto ">
+    <div className="slider-container h-[px] max-w-[1440px] mx-auto relative ">
+      <div className="glow-effect absolute left-[50%] -translate-x-1/2 -bottom-[60%] "></div>
       <Slider {...settings}>
         {images.map((img, index) => (
           <div key={index} className="px-2">
-            <div className="lg:h-[306px] lg:w-[457px] ">
+            <div className="lg:h-[330px] lg:w-[457px] ">
               <img
                 src={img}
                 alt={`Slide ${index + 1}`}

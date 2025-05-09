@@ -8,8 +8,8 @@ const Navbar = () => {
   const navLinks = ["Work", "About", "Blog", "Contact"];
 
   return (
-    <header className="absolute top-5 left-1/2 -translate-x-1/2 w-full max-w-[95%] md:max-w-[1140px] z-50 text-white rounded-[80px]  font-[DM_Sans]">
-      <nav className="w-full px-4 md:px-6 py-4 flex flex-wrap justify-between items-center rounded-[80px] border-blue-800 backdrop-blur-md bg-white/10">
+    <header className="absolute top-8 left-1/2 -translate-x-1/2 w-full max-w-[85%] md:max-w-[1140px] z-50 text-white rounded-[80px]  font-[DM_Sans]">
+      <nav className="w-full px-4 md:px-6 py-6 flex flex-wrap justify-between items-center rounded-[80px] border-blue-800 backdrop-blur-md bg-white/10">
         {/* Logo */}
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-9.5" />

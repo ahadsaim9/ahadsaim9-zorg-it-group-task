@@ -7,10 +7,10 @@ const Card = ({ work }) => {
   console.log(work);
 
   return (
-    <div>
+    <div className="relative">
       <img src={image} alt="" />
-      <div className="flex justify-between items-center bg-black text-white px-4 py-5">
-        <section className="flex flex-col gap-2.5 ">
+      <div className="flex box-border w-full  absolute -bottom-14  justify-between items-center bg-[#0a0a0a] text-white px-4 py-5">
+        <section className="flex flex-col gap-2.5  ">
           <h2 className="font-bold text-2xl">{title}</h2>
           <p className="text-2xl">{industry}</p>
         </section>

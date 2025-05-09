@@ -10,10 +10,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#010114] py-8 text-white w-full">
+    <footer className="w-full bg-[#0f1112] py-8  text-white ">
       <div className="relative w-[1140px] mx-auto p-5 md:p-0">
         {/* ************** Top section *************** */}
-        <div className=" max-w-7xl mx-auto flex flex-col md:flex-row justify-between itetem sm:items-start  gap-10">
+        <div className=" max-w-7xl mx-auto flex flex-col md:flex-row justify-between sm:items-start  gap-10">
           {/* *************** Left *************** */}
           <div>
             <p className="text-2xl text-white">Have a project in mind?</p>
